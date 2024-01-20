@@ -70,11 +70,11 @@ a .profil {
 .tBall {
     width: 20px;
     height: 21px;
-    background-color: black;
+    background-color: darkgray;
     border-radius: 50%;
     cursor: pointer;
     position: absolute;
-    right: 0px;
+    right: -1px;
     top: 0px;
     transition: all .3s ease-in-out;
 }
@@ -334,7 +334,6 @@ a .profil {
 }
 
 .tBall.active {
-    background-color: white;
     transform: translateX(-20px);
 }
 
@@ -432,6 +431,24 @@ a .profil {
         margin-left: 10%;
     }
     .toggler i{
+        display: none;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .profil {
+        display: none;
+    }
+    #ek-1 {
+        display: none;
+    }
+    #sagust {
+        margin-left: 10%;
+    }
+    .toggler i{
+        display: none;
+    }
+    #navnav{
         display: none;
     }
 }
